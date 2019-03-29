@@ -53,7 +53,7 @@
               <li><a href="schedule.html" target="right">日程管理</a></li>
 
 xxx
-
+xxxxxxxx
             </ul>
           </li>
 
