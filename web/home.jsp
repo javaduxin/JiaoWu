@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/home.css" />
     <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
     <link href="css/bootstrap-table.css" rel="stylesheet" type="text/css">
-    <title>移动办公自动化系统</title>
+    <title>教务管理系统</title>
 </head>
 
 <body>

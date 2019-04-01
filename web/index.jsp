@@ -16,7 +16,7 @@
   <style>
     .layui-layer-title{background:url(images/righttitlebig.png) repeat-x;font-weight:bold;color:#46647e; border:1px solid #c1d3de;height: 33px;line-height: 33px;}
   </style>
-  <title>OA管理系统</title>
+  <title>教务管理系统</title>
 </head>
 <body>
 <div id="container">
