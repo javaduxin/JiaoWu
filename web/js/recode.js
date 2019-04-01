@@ -31,7 +31,7 @@ function Recodeload() {
                     valign: 'middle'
                 },
                 {
-                    title: '任务名称',
+                    title: '学生名称',
                     field: 'sex',
                     align: 'center',
                     valign: 'middle'
