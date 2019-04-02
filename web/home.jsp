@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/home.css" />
     <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
     <link href="css/bootstrap-table.css" rel="stylesheet" type="text/css">
-    <title>教务管理系统12</title>
+    <title>教务管理系统122</title>
 </head>
 
 <body>
