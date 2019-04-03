@@ -21,12 +21,15 @@
 
     HttpServletRequest request1=(HttpServletRequest)request;
     Cookie[] cookies=request1.getCookies();
-    for(int i=0;i<cookies.length;i++){
-        if("userName".equals(cookies[i].getName())){
-            name=cookies[i].getValue();
-            break;
+    if(cookies!=null){
+        for(int i=0;i<cookies.length;i++){
+            if("userName".equals(cookies[i].getName())){
+                name=cookies[i].getValue();
+                break;
+            }
         }
     }
+
 %>
 
 <body>

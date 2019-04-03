@@ -4,10 +4,7 @@ import entity.Student;
 import lgl.dao.StudentDao;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 
 public class LoginServlet extends HttpServlet {
@@ -43,6 +40,8 @@ public class LoginServlet extends HttpServlet {
                 resp.addCookie(cookie);
             }
 
+            HttpSession session= req.getSession();
+            session.setAttribute("studentSession",student);
             resp.sendRedirect("index.jsp");
         }else{
             resp.sendRedirect("login.jsp");

@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2019/3/29
-  Time: 14:37
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="lgl.util.OnlinePerson" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html>
@@ -25,16 +19,22 @@
       <div class="top-light"></div>
       <h1 class="logo"></h1>
       <div class="login-info ue-clear">
-        <div class="welcome ue-clear"><span>欢迎您,</span><a href="javascript:void(0)" class="user-name">Admin</a></div>
+        <div class="welcome ue-clear"><span>欢迎您,</span><a href="javascript:void(0)" class="user-name">${studentSession.studentName}</a></div>
         <div class="login-msg ue-clear">
-          <a href="javascript:void(0)" class="msg-txt">消息</a>
-          <a href="javascript:void(0)" class="msg-num">10</a>
+          <a href="javascript:void(0)" class="msg-txt">当前在线人数:</a>
+
+            <%
+               Integer count= (Integer)session.getServletContext().getAttribute("userCount");
+
+            %>
+
+          <a href="javascript:void(0)" class="msg-num"><%=count-2%></a>
         </div>
       </div>
       <div class="toolbar ue-clear">
         <a href="home.jsp" class="home-btn" target="right">首页</a>
         <a href="javascript:void(0)" class="home-btn1" target="right" onclick="openlayer()">修改密码</a>
-        <a href="javascript:void(0)" class="quit-btn exit home-btn">退出</a>
+        <a href="out.jsp" class="quit-btn exit home-btn">退出</a>
       </div>
     </div>
   </div>
