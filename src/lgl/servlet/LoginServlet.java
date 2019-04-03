@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
                 cookie.setMaxAge(1*60);
                 resp.addCookie(cookie);
             }
-
+            //获取session
             HttpSession session= req.getSession();
             session.setAttribute("studentSession",student);
             resp.sendRedirect("index.jsp");
